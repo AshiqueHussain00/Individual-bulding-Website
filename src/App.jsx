@@ -1,17 +1,19 @@
-// App.jsx
-// import React from 'react';
-import './index.css';
+import React from "react";
 
-import ExampleComponent from "./components/ExampleComponent";
+
 
 
 
 const App = () => {
   return (
 
-    <div>
-      <ExampleComponent />
+
+    <div className='w-full h-full bg-black'>
+
+
+
     </div>
+
   );
 };
 
