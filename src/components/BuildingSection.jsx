@@ -11,13 +11,13 @@ const BuildingSection = () => {
 
       {/* -------------- container ------------ */}
 
-      <div className='w-[95%]   mx-auto  flex justify-between h-[650px]  gap-12 relative'>
+      <div className='w-[95%]   mx-auto  flex justify-between h-[780px]  gap-12 relative'>
 
         {/* -------------- left part ---------------- */}
 
         <div className='w-[48%] curve-1 curve-2 relative  px-2 bg-black'>
 
-          <img src={building1} alt="" className='w-full h-full object-cover rounded-[40px] ' />
+          <img src={building1} alt="" className='w-full h-full object-fill rounded-[40px] ' />
           <div className='absolute bottom-0 right-0 w-[460px] h-[130px] bg-black z-[10] rounded-tl-[40px]'></div>
 
 
@@ -26,14 +26,14 @@ const BuildingSection = () => {
 
         {/* --------- large text --------- */}
 
-        <div className='absolute z-[20] text-7xl uppercase   text-white left-[280px] bottom-[30px] tracking-widest'>
+        <div className='absolute z-[20] text-8xl uppercase   text-white left-[280px] bottom-[30px] tracking-widest'>
           Individual Building
         </div>
 
 
         {/* -------------- right part --------------------- */}
 
-        <div className='w-[45%]   flex flex-col gap-y-6 px-8'>
+        <div className='w-[50%]   flex flex-col gap-y-6 px-12'>
 
           {
             buildingData.map((data)=> (
