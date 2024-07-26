@@ -14,7 +14,7 @@ function ExampleComponent() {
         </div>
       </div> */}
       <div className="back-element flex justify-center bg-white/30 gap-96 p-12 absolute rounded-custom-80 z-30">
-      <div className="back-element1"></div>
+      <div className="back-element1"><div className='back-element3'></div> <div className='back-element2'></div></div>
         <div className="flex bg-transparent  rounded-lg overflow-hidden">
           <img
             src={bulding2}
