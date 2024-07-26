@@ -2,13 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --clr: aquamarine;
-}
 
-body {
-    background-color: aquamarine;
-}
+
+
 
 .back-element {
     background-color: purple;
@@ -26,8 +22,8 @@ body {
     width: 13rem;
     height: 11rem;
     border-radius: 50%;
-    border: 10px solid var(--clr);
-    background: var(--clr);
+    border: 10px solid white;
+    background: white;
 
 }
 
@@ -41,8 +37,6 @@ body {
     margin: auto;
     width: 6rem;
     height: 5em;
-    /* transform: rotate(180deg); */
-    /* border-radius: 0px 0px 50px 0px; */
     background: transparent;
 
 }
@@ -51,18 +45,13 @@ body {
     display: block;
     content: "";
     position: absolute;
-    /* border-bottom-right-radius: 2%; */
-    /* border-top-right-radius: 10rem; */
     border-top-right-radius: 50px;
-    /* border-bottom-right-radius: 20px; */
-    /* top: 4.1rem;
-    left: -5.5rem; */
     top: 65px;
     left:-104px;
     background-color: purple;
     height:60px;
     width: 100px;
-    box-shadow: 8px -20px 0 var(--clr);
+    box-shadow: 8px -20px 0 white;
 } 
 
 .back-element1 .back-element3 {
@@ -70,45 +59,12 @@ body {
       display: block;
       content: "";
       position: absolute;
-      /* border-bottom-right-radius: 2%; */
-      /* border-top-right-radius: 10rem; */
       border-top-left-radius: 50px;
-      /* border-bottom-right-radius: 20px; */
-      /* top: 4.1rem;
-      left: -5.5rem; */
       top: 65px;
       right:-104px;
       background-color: purple;
       height:60px;
       width: 100px;
-      box-shadow: -10px -20px 0 var(--clr);
+      box-shadow: -10px -20px 0 white;
   } 
 
-/* .back-element1 .back-element3 {
-    z-index: 3;
-    display: block;
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    transform: rotate(180deg);
-    top: 4rem;
-    left: -4.4rem; 
-    background-color: #000;
-    height: 10rem;
-    width: 5rem;
-    background-color: #fff;
-} */
-/* .back-element1::after {
-    content: "";
-    position: absolute;
-    top: 2rem;
-    left: -3.5rem;
-    right: 20rem;
-    display: block;
-    margin: auto;
-    width: 4rem;
-    height: 3rem;
-    border-radius: 50%;
-    background:var(--clr);
-
-} */

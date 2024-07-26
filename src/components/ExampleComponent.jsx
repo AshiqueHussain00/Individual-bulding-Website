@@ -6,16 +6,10 @@ import bulding3 from "/src/images/building3.jpg";
 function ExampleComponent() {
   return (
     <div className="pt-16 ">
-      {/* <div className="flex absolute justify-center z-40  m-auto left-0 right-0 top-0 ">
-        <div className="...">
-          <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center border-4 border-white z-40">
-            <span className="text-lg font-semibold">LEARN MORE</span>
-          </div>
-        </div>
-      </div> */}
+  
 
       {/* ---------- container ------------------- */}
-      <div className='w-[95%] mx-auto border border-red-600'>
+      <div className='w-[95%] mx-auto '>
 
 
         <div className="w-[95%] back-element flex justify-between bg-white/30  py-10 px-12 absolute rounded-custom-80 z-30">
@@ -25,9 +19,9 @@ function ExampleComponent() {
 
           {/* ------------------------- left part ------------------------ */}
 
-          <div className="flex bg-transparent w-[32%] border border-blue-500 gap-x-6">
+          <div className="flex bg-transparent w-[32%] b gap-x-6 items-center">
 
-            <div className='w-[400px] h-[130px] border border-red-400'>
+            <div className='w-[400px] h-[130px] '>
 
               <img
                 src={bulding2}
@@ -49,9 +43,9 @@ function ExampleComponent() {
                {/* ------------------ right part ------------------------- */}
 
 
-          <div className="flex gap-x-6 bg-transparent border border-blue-500 w-[32%]">
+          <div className="flex gap-x-6 bg-transparent w-[32%] items-center">
 
-            <div className='w-[400px] h-[130px]  border border-red-400 '>
+            <div className='w-[400px] h-[130px]  '>
 
 
               <img
