@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react'
 import { NavbarLinks } from '../data/navbar-links'
 
@@ -8,3 +9,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+=======
+>>>>>>> Stashed changes

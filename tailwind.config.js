@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        'custom-80': '80px',
+        
+      },
       colors: {
         'very-dark-gray': '#101010',
         'very-light-gray': '#E7E7E7',
