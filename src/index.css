@@ -3,8 +3,115 @@
 @tailwind utilities;
 
 
+
 body{
     width:100vw;
     min-height:100vh;
     overflow-x: hidden;
 }
+
+
+
+
+.back-element {
+    background-color: purple;
+  
+}
+
+.back-element .back-element1 {
+    content: "";
+    position: absolute;
+    top: -4.7rem;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+    width: 13rem;
+    height: 11rem;
+    border-radius: 50%;
+    border: 10px solid white;
+    background: white;
+
+}
+
+.back-element1::before {
+    content: "";
+    position: absolute;
+    top: 2.4rem;
+    left: -5.1rem;
+    right: 30rem;
+    display: block;
+    margin: auto;
+    width: 6rem;
+    height: 5em;
+    background: transparent;
+
+}
+.back-element1 .back-element2 {
+  z-index: 1;
+    display: block;
+    content: "";
+    position: absolute;
+    border-top-right-radius: 50px;
+    top: 65px;
+    left:-104px;
+    background-color: purple;
+    height:60px;
+    width: 100px;
+    box-shadow: 8px -20px 0 white;
+} 
+
+.back-element1 .back-element3 {
+    z-index: 1;
+      display: block;
+      content: "";
+      position: absolute;
+      border-top-left-radius: 50px;
+      top: 65px;
+      right:-104px;
+      background-color: purple;
+      height:60px;
+      width: 100px;
+      box-shadow: -10px -20px 0 white;
+  } 
+
+  .curve-1{
+    position: relative;
+    z-index: 1;
+}
+
+.curve-1::after{
+    content: "";
+    position: absolute;
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    border-bottom-right-radius: 40px;
+    bottom:130px;
+    right:6px;
+    z-index:10;
+    box-shadow: 7px 25px 0 black;
+}
+
+.curve-2{
+    position: relative;
+    z-index: 1;
+
+}
+
+.curve-2::before{
+
+    content: "";
+    position: absolute;
+    width:60px;
+    height:60px;
+    background-color: transparent;
+    border-bottom-right-radius: 40px;
+    bottom:0px;
+    left:180px;
+    z-index:10;
+    box-shadow: 20px 2px 0 black;
+
+}
+
+

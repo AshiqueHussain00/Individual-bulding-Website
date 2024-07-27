@@ -3,6 +3,7 @@ import { BsTelephone } from "react-icons/bs";
 import { NavbarLinks } from '../data/navbar-links';
 import { motion } from 'framer-motion'
 
+//border motion code
 // Path data for separate top and bottom lines
 const pathDataTop = `
   M2,0
@@ -27,6 +28,7 @@ const borderDraw = {
   }),
 };
 
+//navbar component
 const Navbar = () => {
   return (
     <div className="relative h-screen bg-transperant">
@@ -60,7 +62,12 @@ const Navbar = () => {
               custom={1} // Second line
             />
           </svg>
+          
+
+        
           <div className="relative z-10 flex justify-between bg-transparent rounded-full">
+
+           
             <ul className="flex items-center">
               {NavbarLinks.map((link) => (
                 <li key={link.id} className="list border border-white rounded-full p-2 w-40 flex items-center justify-center">
@@ -93,4 +100,6 @@ const Navbar = () => {
   );
 };
 
+
 export default Navbar;
+
