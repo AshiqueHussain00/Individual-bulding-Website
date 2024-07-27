@@ -1,4 +1,7 @@
 import React from 'react'
+import { FiArrowDownRight } from "react-icons/fi";
+import { FiArrowDownLeft } from "react-icons/fi";
+
 
 const BuildingCard = ({ data }) => {
     return (
@@ -11,7 +14,7 @@ const BuildingCard = ({ data }) => {
                 <img src={data.image} alt="buildings" className='w-full h-full object-cover rounded-[20px]' />
             </div>
 
-            <div className='text-lg'>
+            <div className='text-lg pt-4'>
                 {data.desc}
             </div>
 
