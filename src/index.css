@@ -7,70 +7,8 @@
 body{
     width:100vw;
     min-height:100vh;
-    background-image: url('/src/images/building3.jpg');
     overflow-x: hidden;
 }
-
-
-
-
-
-/* .back-element .back-element1 {
-    content: "";
-    position: absolute;
-    top: -4.7rem;
-    left: 0;
-    right: 0;
-    display: block;
-    margin: auto;
-    width: 13rem;
-    height: 11rem;
-    border-radius: 50%;
-    border: 10px solid white;
-    background: white;
-
-} */
-
-/* .back-element1::before {
-    content: "";
-    position: absolute;
-    top: 2.4rem;
-    left: -5.1rem;
-    right: 30rem;
-    display: block;
-    margin: auto;
-    width: 6rem;
-    height: 5em;
-    background: transparent;
-
-}
-.back-element1 .back-element2 {
-  z-index: 1;
-    display: block;
-    content: "";
-    position: absolute;
-    border-top-right-radius: 50px;
-    top: 65px;
-    left:-104px;
-    background-color: purple;
-    height:60px;
-    width: 100px;
-    box-shadow: 8px -20px 0 white;
-} 
-
-.back-element1 .back-element3 {
-    z-index: 1;
-      display: block;
-      content: "";
-      position: absolute;
-      border-top-left-radius: 50px;
-      top: 65px;
-      right:-104px;
-      background-color: purple;
-      height:60px;
-      width: 100px;
-      box-shadow: -10px -20px 0 white;
-  }  */
 
   .curve-1{
     position: relative;
