@@ -1,12 +1,11 @@
 import "./App.css";
-import ExampleComponent from "./components/ExampleComponent";
-import Navbar from "./components/Navbar";
+import AnimatedComponent from "./components/AnimatedComponent";
+
 
 function App() {
   return (
     <div className="bg-black">
-      <ExampleComponent />
-      <Navbar />
+      <AnimatedComponent />
     </div>
   );
 }
