@@ -1,0 +1,30 @@
+@font-face {
+    font-family:NeutralFace;
+    src: url(./fonts/NeutralFace.woff);
+}
+@font-face {
+    font-family: 'Neutral Face Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neutral Face Regular'), url('./fonts/NeutralFace.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neutral Face Bold';
+    font-style: normal;
+    
+    font-weight: normal;
+    src: local('Neutral Face Bold'), url('./fonts/NeutralFace.woff') format('woff');
+    }
+nav{
+    /* Ensure initial state is no border */
+.navbar-container {
+    border: none; /* Hide border initially */
+  }
+  
+  .navbar-container motion.div {
+    border: none; /* Hide border initially */
+  }
+}
+

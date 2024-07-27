@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors: {
         'very-dark-gray': '#101010',
         'very-light-gray': '#E7E7E7',

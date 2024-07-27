@@ -1,21 +1,25 @@
 
-export const NavbarLinks = {
-    Shape: {
-      name: "Shape",
-      path: "/home",
+export const NavbarLinks = [
+     {
+      id:1,
+      name: "SHAPE",
+      path: "#",
     },
-    about: {
+    {
+      id:2,
       name: "About",
-      path: "/about",
+      path: "#",
+    },
+    {
+      id:3,
+      name: "Services",
+      path: "#",
+    },
+    {
+      id:4,
+      name: "Apartment",
+      path: "#",
     },
     
-    services: {
-      name: "Services",
-      path: "/services",
-    },
-    Apartment: {
-      name: "Apartment",
-      path: "/apartment",
-    },
-  };
+];
   
