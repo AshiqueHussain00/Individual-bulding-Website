@@ -7,18 +7,15 @@
 body{
     width:100vw;
     min-height:100vh;
+    background-image: url('/src/images/building3.jpg');
     overflow-x: hidden;
 }
 
 
 
 
-.back-element {
-    background-color: purple;
-  
-}
 
-.back-element .back-element1 {
+/* .back-element .back-element1 {
     content: "";
     position: absolute;
     top: -4.7rem;
@@ -32,9 +29,9 @@ body{
     border: 10px solid white;
     background: white;
 
-}
+} */
 
-.back-element1::before {
+/* .back-element1::before {
     content: "";
     position: absolute;
     top: 2.4rem;
@@ -73,7 +70,7 @@ body{
       height:60px;
       width: 100px;
       box-shadow: -10px -20px 0 white;
-  } 
+  }  */
 
   .curve-1{
     position: relative;
