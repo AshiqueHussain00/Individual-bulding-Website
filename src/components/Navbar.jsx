@@ -31,9 +31,9 @@ const borderDraw = {
 //navbar component
 const Navbar = () => {
   return (
-    <div className="relative h-screen bg-transperant">
-      <div className="relative z-10 p-6">
-        <div className="relative">
+   
+      <div className="relative  bg-black  z-10 p-6">
+        <div className="relative bg-black">
           <svg
             className="absolute inset-0"
             width="98%"
@@ -96,7 +96,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+ 
   );
 };
 

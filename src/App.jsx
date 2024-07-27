@@ -3,12 +3,16 @@ import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 
+
+import BuildingSection from './components/BuildingSection'
+
 function App() {
 
   return (
-    <div className='w-full h-full  '>
+    <div className='bg-black'>
        <Navbar/>
-      
+      <BuildingSection/>
+     
     </div>
   )
 }
