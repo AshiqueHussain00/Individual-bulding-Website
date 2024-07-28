@@ -27,7 +27,7 @@ const BuildingCard = ({ data, index }) => {
         if (isInView) {
             timer = setTimeout(() => {
                 setShouldAnimate(true);
-            }, 700); //1.7 seconds delay  
+            }, 700); //0.7 seconds delay  
         } else {
             setShouldAnimate(false)
         }
@@ -42,16 +42,15 @@ const BuildingCard = ({ data, index }) => {
 
         show: (i) => ({
             y: 10,
-            backgroundColor: ["#fff"],
+            backgroundColor: ["#000000", "#989898", "#FFFFFF"],
             transition: {
-                delay: i * 0.3,
-                duration: 0.7,
-                times: [0.2, 0.8, 0.7, 0.9],
+                delay: i * 0.6,
+                duration: 0.9,
+                times: [0.1, 0.4, 0.4],
                 when: "beforeChildren",
                 staggerChildren: 0.3,
             }
         })
-
 
     }
 
@@ -59,10 +58,10 @@ const BuildingCard = ({ data, index }) => {
     const Variant2 = {
 
         show: (i) => ({
-            y: 10,
+            y: 0,
             opacity: 1,
             transition: {
-                delay: i * 0.5,
+                delay: i * 0.8,
                 duration: 0.7,
 
             }
