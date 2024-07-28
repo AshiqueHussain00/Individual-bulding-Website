@@ -1,5 +1,5 @@
 import "./App.css";
-// import HeroSection from "./components/HeroSection";
+
 
 
 
@@ -7,9 +7,8 @@ import "./App.css";
 function App() {
   return (
     <div className="bg-black">
-    
-      {/* <HeroSection/> */}
-      
+
+   
      
     </div>
   );
