@@ -9,6 +9,7 @@ function App() {
     <div className="bg-black">
     
       {/* <HeroSection/> */}
+      
      
     </div>
   );
