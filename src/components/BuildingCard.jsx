@@ -42,7 +42,7 @@ const BuildingCard = ({ data, index }) => {
 
         show: (i) => ({
             y: 10,
-            backgroundColor: ["#000000", "#989898", "#DDDDDD", "#FFFFFF"],
+            backgroundColor: ["#fff"],
             transition: {
                 delay: i * 0.3,
                 duration: 0.7,
@@ -78,13 +78,13 @@ const BuildingCard = ({ data, index }) => {
 
         <motion.div
             ref={ref}
-            initial={{ y: -10, backgroundColor: "#000000" }}
+            initial={{ y: -10, backgroundColor: "#000000", opacity: 1}}
             animate={
                 shouldAnimate ? "show" : ""
             }
             custom={index}
             variants={Variant1}
-            className={`w-full  flex gap-x-8  py-6 px-4 bg-white rounded-[20px] text-black relative
+            className={`w-full  flex gap-x-8  py-4 px-4 bg-white rounded-[20px] text-black relative
         ${data.id % 2 === 0 ? "flex-row-reverse" : "flex-row"
                 }
     `}>
