@@ -44,7 +44,7 @@ const BuildingSection = () => {
             buildingData.map((data , index) => (
               <BuildingCard data={data} index={index} key={data.id} />
             ))
-          }
+}
 
 
 
