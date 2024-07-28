@@ -1,10 +1,11 @@
 import "./App.css";
-import ExampleComponent from "./components/ExampleComponent";
+import AnimatedComponent from "./components/AnimatedComponent";
+
 
 function App() {
   return (
     <div className="bg-black">
-      <ExampleComponent />
+      <AnimatedComponent />
     </div>
   );
 }

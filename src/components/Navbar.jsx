@@ -32,7 +32,7 @@ const borderDraw = {
 const Navbar = () => {
   return (
    
-      <div className="relative  bg-black  z-10 p-6">
+      <div className="  bg-black  z-20 p-6">
         <div className="relative bg-black">
           <svg
             className="absolute inset-0"
