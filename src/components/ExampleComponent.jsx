@@ -1,5 +1,5 @@
 // import React from "react";
-import form '/src/index.css'
+
 import background_image from "/src/images/background_div.png";
 import bulding2 from "/src/images/building2.jpg";
 import bulding3 from "/src/images/building3.jpg";
