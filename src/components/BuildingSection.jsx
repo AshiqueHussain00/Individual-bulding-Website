@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const BuildingSection = () => {
   return (
-    <div className='h-full bg-black pt-10'>
+    <div className='h-full bg-black '>
 
 
 
@@ -16,7 +16,7 @@ const BuildingSection = () => {
       <div
 
 
-        className='w-[95%] mx-auto flex  justfy-between  h-[790px]  gap-12 relative'>
+        className='w-[95%] pt-36 pb-4 mx-auto flex  justfy-between  h-[790px]  gap-12 relative'>
 
 
 
@@ -24,7 +24,7 @@ const BuildingSection = () => {
         {/* -------------- left part ---------------- */}
 
         <motion.div
-          initial={{ width: "100vw", height: "100vh", position: "absolute", objectFit: "cover" }}
+          initial={{ width: "100vw", height: "100%", position: "absolute", objectFit: "cover" }}
           whileInView={{ width: "48%", height: "100%", position: "relative", objectFit: "fill" }}
           transition={{ duration: 2 }}
 

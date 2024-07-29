@@ -55,7 +55,7 @@ function ExampleComponent() {
   };
 
   return (
-    <div ref={ref} className="relative w-[95%] mx-auto bg-transparent ">
+    <div ref={ref} className="relative w-[95%] mx-auto bg-transparent mb-20">
       {/* Background Image Animation */}
       <motion.img
         src={background_image}
