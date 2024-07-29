@@ -1,5 +1,5 @@
 import React from 'react'
-import building1 from '../images/building1.jpg'
+import building4 from '../images/building4.jpg'
 import { buildingData } from '../data/building-data'
 import BuildingCard from './BuildingCard'
 import { motion } from 'framer-motion'
@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const BuildingSection = () => {
   return (
-    <div className='h-full '>
+    <div className='h-full bg-black pt-10'>
 
 
 
@@ -16,7 +16,7 @@ const BuildingSection = () => {
       <div
 
 
-        className='w-[95%] mx-auto flex  justfy-between  h-[780px]  gap-12 relative'>
+        className='w-[95%] mx-auto flex  justfy-between  h-[790px]  gap-12 relative'>
 
 
 
@@ -30,7 +30,7 @@ const BuildingSection = () => {
 
           className='curve-1 curve-2   px-2 bg-black '>
 
-          <img src={building1} alt="" className='w-full h-full  rounded-[40px] z-[5] ' />
+          <img src={building4} alt="" className='w-full h-full  rounded-[40px] z-[5] ' />
           <div className='absolute bottom-0 right-0 w-[480px] h-[130px] bg-black z-[15] rounded-tl-[40px]'></div>
 
 

@@ -43,8 +43,8 @@ const Navbar = () => {
   }, [inView, entry]);
 
   return (
-    <div className="bg-black z-20 p-6 sticky top-0 z-[999999]">
-      <div className="relative bg-black">
+    <div className=" z-20 p-6 sticky top-0 z-[999999]">
+      <div className="relative ">
         <svg
           className="absolute inset-0"
           width="98%"

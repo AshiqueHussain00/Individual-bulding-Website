@@ -66,16 +66,16 @@ const AnimatedBox = () => {
   };
 
   return (
-    <div ref={ref} className="relative">
+    <div ref={ref} className="relative pt-10">
       {hasScaledUp && (
         <motion.div
-          className="absolute rounded-full bg-black bg-opacity-50 border-2 border-white"
+          className="absolute rounded-full bg-black bg-opacity-50 border-2 border-white pt-10"
           style={{
             width: '160px',
             height: '160px',
             left: "49.7%",
             transform: "translateX(-50%)",
-            top: "calc(-96px + 1.5rem)",
+            top: "calc(-56px + 1.5rem)",
             zIndex: 49,
           }}
           initial={{ opacity: 0 }}
@@ -105,16 +105,16 @@ const AnimatedBox = () => {
       </motion.div>
 
       <motion.div
-        className="flex flex-col gap-y-3 absolute left-1/2 transform -translate-x-1/2 top-1/2 items-center"
+        className="flex flex-col gap-y-3 absolute left-1/2 transform -translate-x-1/2 top-1/2 items-center pt-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: hasScaledUp ? 1 : 0 }}
         transition={{ duration: 0.5, delay: 3 }}
       >
-        {/* Placeholder for other content */}
-        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black text-lg">
-          {/* Placeholder content */}
+      
+        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black text-lg pt-10">
+          
         </div>
-        {/* You can add more content here as needed */}
+    
       </motion.div>
     </div>
   );

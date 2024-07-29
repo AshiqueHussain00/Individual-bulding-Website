@@ -7,15 +7,13 @@
 body{
     width:100vw;
     min-height:100vh;
-    overflow-x: hidden;
-}
-
-.img{
-    background-image: url('./images//building1.jpg');
-    background-size: cover ;
-    background-position: center;
+    background-image: url('./src/images//building1.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
     background-repeat: no-repeat;
 }
+
 
   .curve-1{
     position: relative;

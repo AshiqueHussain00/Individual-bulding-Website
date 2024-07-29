@@ -37,9 +37,9 @@ const AnimatedContainer = () => {
   }, [isScrolled, controls]);
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen w-[95%]">
       <motion.div
-        initial={{ y: 325 }}
+        initial={{ y: 325, x:0 }}
         animate={controls}
       >
         <div className='text-white text-8xl font-bold'>SHAPE</div>
