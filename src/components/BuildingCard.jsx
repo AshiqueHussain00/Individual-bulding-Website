@@ -27,7 +27,7 @@ const BuildingCard = ({ data, index }) => {
         if (isInView) {
             timer = setTimeout(() => {
                 setShouldAnimate(true);
-            }, 1600); //0.7 seconds delay  
+            }, 1500); //1.5 seconds delay  
         } else {
             setShouldAnimate(false)
         }
@@ -41,10 +41,10 @@ const BuildingCard = ({ data, index }) => {
     const Variant1 = {
 
         show: (i) => ({
-            y: 10,
-            backgroundColor: ["#000000", "#989898", "#FFFFFF"],
+            y: 0,
+            backgroundColor: ["#404040", "#989898", "#FFFFFF"],
             transition: {
-                delay: i * 0.6,
+                delay: i * 0.5,
                 duration: 0.9,
                 times: [0.1, 0.4, 0.4],
                 when: "beforeChildren",
@@ -61,7 +61,7 @@ const BuildingCard = ({ data, index }) => {
             y: 0,
             opacity: 1,
             transition: {
-                delay: i * 0.8,
+                delay: i * 0.6,
                 duration: 0.7,
 
             }
