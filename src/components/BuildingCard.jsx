@@ -24,10 +24,11 @@ const BuildingCard = ({ data, index }) => {
     useEffect(() => {
 
         let timer;
+        
         if (isInView) {
             timer = setTimeout(() => {
                 setShouldAnimate(true);
-            }, 700); //0.7 seconds delay  
+            }, 1000); //1.5 seconds delay  
         } else {
             setShouldAnimate(false)
         }
@@ -41,11 +42,11 @@ const BuildingCard = ({ data, index }) => {
     const Variant1 = {
 
         show: (i) => ({
-            y: 10,
-            backgroundColor: ["#000000", "#989898", "#FFFFFF"],
+            y: 0,
+            backgroundColor: ["#404040", "#989898", "#FFFFFF"],
             transition: {
-                delay: i * 0.6,
-                duration: 0.9,
+                delay: i * 0.3,
+                duration: 0.6,
                 times: [0.1, 0.4, 0.4],
                 when: "beforeChildren",
                 staggerChildren: 0.3,
@@ -61,7 +62,7 @@ const BuildingCard = ({ data, index }) => {
             y: 0,
             opacity: 1,
             transition: {
-                delay: i * 0.8,
+                delay: i * 0.6,
                 duration: 0.7,
 
             }
@@ -98,7 +99,9 @@ const BuildingCard = ({ data, index }) => {
                 custom={index}
                 variants={Variant2}
                 className='w-[280px] h-[170px]'>
+
                 <img src={data.image} alt="buildings" className='w-full h-full object-cover rounded-[20px]' />
+
             </motion.div>
 
 
@@ -113,7 +116,9 @@ const BuildingCard = ({ data, index }) => {
 
                 variants={Variant2}
                 className='text-lg pt-4'>
+
                 {data.desc}
+
             </motion.div>
 
             {/* ---------------  arrrow --------------------- */}
