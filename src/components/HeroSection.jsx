@@ -157,8 +157,13 @@ const HeroSection = () => {
                                     custom={index}
                                     variants={Variant2}
                                     key={data.id} className="w-8 h-8 flex items-center justify-center bg-white rounded-full text-black text-lg">
+
+
                                     {data.icon}
+                                    
                                 </motion.div>
+
+
                             ))
                         }
 
