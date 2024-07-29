@@ -12,18 +12,25 @@ const BuildingSection = () => {
 
       {/* -------------- container ------------ */}
 
-      <div className='w-[95%]   mx-auto  flex justify-between h-[780px]  gap-12 relative'>
+      <div className='    h-[780px]  gap-12 relative'>
+
+        
 
         {/* -------------- left part ---------------- */}
 
-        <div className='w-[48%] curve-1 curve-2 relative  px-2 bg-black '>
+        <motion.div
+        initial = {{width: "95vw" , height: "100vh" , position: "absolute" , objectFit: "cover"}}
+        whileInView = {{width: "48%" , height:"100%" , position: "relative" , objectFit: "fill"}}
+        transition = {{duration: 3 }}
 
-          <img src={building1} alt="" className='w-full h-full object-fill rounded-[40px] relative ' />
-          <div className='absolute bottom-0 right-0 w-[460px] h-[130px] bg-black z-[15] rounded-tl-[40px]'></div>
+         className='curve-1 curve-2   px-2 bg-black border border-red-400'>
+
+          <img src={building1} alt="" className='w-full h-full  rounded-[40px] z-[5] ' />
+          <div className='absolute bottom-0 right-0 w-[70%] h-[20%] bg-red-300 z-[15] rounded-tl-[40px]'></div>
 
 
 
-        </div>
+        </motion.div>
 
         {/* --------- large text --------- */}
 
@@ -38,7 +45,11 @@ const BuildingSection = () => {
 
         {/* -------------- right part --------------------- */}
 
-        <div className='w-[50%]   flex flex-col gap-y-6 px-12'>
+        <motion.div
+         initial = {{ position: "absolute"}}
+         whileInView = {{ position: "relative"}}
+         transition = {{duration: 2.5 }}
+         className='w-[50%]   flex flex-col gap-y-6 px-12'>
 
           {
             buildingData.map((data , index) => (
@@ -49,7 +60,7 @@ const BuildingSection = () => {
 
 
 
-        </div>
+        </motion.div>
 
       </div>
 

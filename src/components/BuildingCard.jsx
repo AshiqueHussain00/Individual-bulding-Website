@@ -27,7 +27,7 @@ const BuildingCard = ({ data, index }) => {
         if (isInView) {
             timer = setTimeout(() => {
                 setShouldAnimate(true);
-            }, 700); //0.7 seconds delay  
+            }, 1600); //0.7 seconds delay  
         } else {
             setShouldAnimate(false)
         }
