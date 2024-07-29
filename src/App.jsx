@@ -7,11 +7,12 @@ import BuildingCard from "./components/BuildingCard";
 import BuildingSection from './components/BuildingSection';
 import AnimatedContainer from './components/AnimatedContainer'
 import AnimatedComponent from './components/AnimatedComponent'
+import building from './images/building1.jpg'
 
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-black ">
 <Navbar/>
 <HeroSection/>
 <AnimatedBox/>

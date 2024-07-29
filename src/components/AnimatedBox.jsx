@@ -48,7 +48,7 @@ const AnimatedBox = () => {
       scale: 1.5,
       transition: {
         duration: 0.5,
-        delay: 2,
+        delay: 1.2,
       },
     },
     exitState: {
