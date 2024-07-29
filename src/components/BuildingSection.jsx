@@ -24,7 +24,7 @@ const BuildingSection = () => {
         {/* -------------- left part ---------------- */}
 
         <motion.div
-        initial = {{width: "95vw" , height: "100vh" , position: "absolute" , objectFit: "cover"}}
+        initial = {{width: "100vw" , height: "100vh" , position: "absolute" , objectFit: "cover"}}
         whileInView = {{width: "48%" , height:"100%" , position: "relative" , objectFit: "fill"}}
         transition = {{duration: 2 }}
 
