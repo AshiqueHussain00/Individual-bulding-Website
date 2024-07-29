@@ -110,7 +110,7 @@ const HeroSection = () => {
         <div ref={ref} className="bg-black-800  text-white p-6 w-[90%] mx-auto">
             <h1
 
-                className="text-4xl md:text-5xl lg:text-[86px] font-Neutralface mb-6 flex flex-col gap-y-2 ">
+                className="text-4xl md:text-5xl lg:text-[86px] font-Neutralface mb-6 flex flex-col gap-y-3 ">
                 <motion.span
                     initial={{ x: -500, opacity: 0 }}
                     animate={
@@ -120,7 +120,7 @@ const HeroSection = () => {
                     className="block "
 
                 >INDIVIDUAL BUILDING</motion.span>
-                <br />
+               
                 <motion.span
                     initial={{ x: -500, opacity: 0 }}
                     animate={
