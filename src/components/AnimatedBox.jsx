@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { IoKeyOutline, IoHeartOutline, IoBagOutline } from 'react-icons/io5';
 import { useInView } from 'react-intersection-observer';
 
 const AnimatedBox = () => {
   const [isInView, setIsInView] = useState(false);
   const [hasScaledUp, setHasScaledUp] = useState(false);
   const { ref } = useInView({
-    threshold: 0.5, // Trigger animation when 50% of the component is in view
-    triggerOnce: false, // Trigger animation on each intersection
+    threshold: 0.5,
+    triggerOnce: false,
     onChange: (inView) => {
       setIsInView(inView);
       if (!inView) {
-        setHasScaledUp(false); // Reset animation state when out of view
+        setHasScaledUp(false);
       }
     }
   });
@@ -24,8 +23,8 @@ const AnimatedBox = () => {
       opacity: 0,
       scale: 1,
       transition: {
-        duration: 1,
-        delay: 1,
+        duration: 0.1,
+        delay: 0.1,
       },
     },
     animateState: {
@@ -36,15 +35,15 @@ const AnimatedBox = () => {
       transition: {
         type: "spring",
         stiffness: 50,
-        duration: 0.5,
-        delay: 3,
+        duration: 0.1,
+        delay: 0.1,
       },
     },
     scaleUp: {
       scale: 1.5,
       transition: {
-        duration: 1,
-        delay: 3,
+        duration: 0.5,
+        delay: 2,
       },
     },
     exitState: {
@@ -55,17 +54,11 @@ const AnimatedBox = () => {
       transition: {
         type: "spring",
         stiffness: 5,
-        duration: 1,
-        delay: 1,
+        duration: 0.5,
+        delay: 0.5,
       },
     },
   };
-
-  const iconData = [
-    { id: 1, icon: <IoKeyOutline /> },
-    { id: 2, icon: <IoHeartOutline /> },
-    { id: 3, icon: <IoBagOutline /> },
-  ];
 
   return (
     <div ref={ref} className="relative">
@@ -82,7 +75,7 @@ const AnimatedBox = () => {
           }}
           initial={{ opacity: 0 }}
           animate={{ opacity: hasScaledUp ? 1 : 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
         />
       )}
 
@@ -90,7 +83,7 @@ const AnimatedBox = () => {
         className="w-24 h-24 bg-white rounded-full absolute flex items-center justify-center text-black"
         variants={variants}
         initial="initialState"
-        animate={isInView ? ['animateState', 'scaleUp'] : 'initialState'} // Trigger animations when in view
+        animate={isInView ? ['animateState', 'scaleUp'] : 'initialState'}
         exit="exitState"
         onAnimationComplete={(currentAnimation) => {
           if (currentAnimation === 'scaleUp') {
@@ -110,25 +103,13 @@ const AnimatedBox = () => {
         className="flex flex-col gap-y-3 absolute left-1/2 transform -translate-x-1/2 top-1/2 items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: hasScaledUp ? 1 : 0 }}
-        transition={{ duration: 1, delay: 4 }}
+        transition={{ duration: 0.5, delay: 3 }}
       >
-        {iconData.map((data, index) => (
-          <motion.div
-            key={data.id}
-            className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black text-lg"
-            custom={index}
-            variants={{
-              animate: {
-                opacity: 1,
-                y: 0,
-                transition: { delay: index * 0.5, duration: 0.5 }
-              }
-            }}
-            animate={hasScaledUp ? "animate" : ""}
-          >
-            {data.icon}
-          </motion.div>
-        ))}
+        {/* Placeholder for other content */}
+        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black text-lg">
+          {/* Placeholder content */}
+        </div>
+        {/* You can add more content here as needed */}
       </motion.div>
     </div>
   );

@@ -16,7 +16,7 @@ function App() {
      
       
       </div>
-      <div className="second">
+      <div className="w-[95%] mx-auto">
       <Navbar/>
       <HeroSection/>
       <AnimatedBox/>
@@ -25,7 +25,7 @@ function App() {
       
       </div>
       <div className="three mt-64">
-      <Navbar/>
+      
       <BuildingSection/>
       <AnimatedComponent/>
       </div>
