@@ -11,7 +11,7 @@ const BuildingCard = ({ data, index }) => {
     // For delay ater InView condtion
     const ref = useRef(null);
 
-   
+
     const [shouldAnimate, setShouldAnimate] = useState(false);
 
     const isInView = useInView(ref, {
@@ -24,7 +24,7 @@ const BuildingCard = ({ data, index }) => {
     useEffect(() => {
 
         let timer;
-        
+
         if (isInView) {
             timer = setTimeout(() => {
                 setShouldAnimate(true);
@@ -78,7 +78,7 @@ const BuildingCard = ({ data, index }) => {
 
         <motion.div
             ref={ref}
-            initial={{ y: -10, backgroundColor: "#000000", opacity: 1}}
+            initial={{ y: -10, backgroundColor: "#000000", opacity: 1 }}
             animate={
                 shouldAnimate ? "show" : ""
             }
@@ -115,7 +115,7 @@ const BuildingCard = ({ data, index }) => {
                 custom={index}
 
                 variants={Variant2}
-                className='text-lg pt-4'>
+                className='pt-4 text-lg'>
 
                 {data.desc}
 
